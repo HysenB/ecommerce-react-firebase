@@ -9,6 +9,8 @@ import "../styles/home.css";
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img.png'
 
+import Services from '../services/Services';
+
 const Home = () => {
 
     const year = new Date().getFullYear();
@@ -33,6 +35,18 @@ const Home = () => {
                         <div className="hero__img">
                             <img src={heroImg} alt="" />
                         </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        <Services />
+
+        <section className="trending__products">
+            <Container>
+                <Row>
+                    <Col lg='12' className='text-center'>
+                        <h2 className="section__title">Trending Products</h2>
                     </Col>
                 </Row>
             </Container>
